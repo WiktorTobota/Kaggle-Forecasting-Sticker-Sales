@@ -41,7 +41,9 @@ Zminimalizować wartość MAPE w prognozie liczby sprzedanych naklejek, wykorzys
 
 4. **Wybór najlepszego modelu**
    - Wybrano model z najniższym błędem MAPE.
+     - XGBoost: 0.15283
    - Ponownie wytrenowano go na pełnym zbiorze danych treningowych.
+     - Random Forest: 0.14697  
 
 5. **Predykcja i zapis wyników**
    - Na podstawie najlepszego modelu wygenerowano prognozy dla danych testowych.
@@ -50,7 +52,4 @@ Zminimalizować wartość MAPE w prognozie liczby sprzedanych naklejek, wykorzys
 ---
 ## Wyniki
 1. **Predykcje**: Zapisane w pliku predictions.csv.
-2. **Ocena**:
-  - Model 1 (użyty do uzupełnienia braków w num_sold): XGBoost: 0.15283
-  - Model 2 (użyty do predykcji wyników): Random Forest: 0.14697
-4. **Wynik na platformie Kaggle**: 0.16846
+2. **Wynik na platformie Kaggle**: 0.16846

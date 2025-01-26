@@ -28,9 +28,11 @@ Zminimalizować wartość MAPE w prognozie liczby sprzedanych naklejek, wykorzys
      - `year` (rok),
      - `month` (miesiąc),
      - `day` (dzień).
-   - Przygotowanie danych do wejścia dla modeli predykcyjnych.
-
-3. **Modelowanie**
+   - Przygotowanie danych do wejścia dla modeli predykcyjnych za pomocią funkcji **create_preprocessor** :
+     - Wartości numeryczne -> SimpleImputer | StandardScaler
+     - Wartości kategoryczne -> SimpleImputer | OneHotEncoder
+  
+3. **Modele użyte przy problemie**
    - Porównano wydajność następujących modeli:
      - **LinearRegression**
      - **RandomForestRegressor**
@@ -49,6 +51,6 @@ Zminimalizować wartość MAPE w prognozie liczby sprzedanych naklejek, wykorzys
 ## Wyniki
 1. **Predykcje**: Zapisane w pliku predictions.csv.
 2. **Ocena**:
-   -Model 1: XGBoost: 0.15283456747451746
-   -Model 2: Random Forest: 0.14696988698255328
+   -Model 1: XGBoost: 0.15283
+   -Model 2: Random Forest: 0.14697
 3. **Wynik na platformie Kaggle**: 0.16846

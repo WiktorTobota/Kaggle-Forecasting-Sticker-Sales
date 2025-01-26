@@ -46,6 +46,9 @@ Zminimalizować wartość MAPE w prognozie liczby sprzedanych naklejek, wykorzys
    - Wyniki zapisano w pliku `predictions.csv`.
 
 ---
-
-## Struktura plików
-
+## Wyniki
+1. **Predykcje**: Zapisane w pliku predictions.csv.
+2. **Ocena**:
+   -Model 1: XGBoost: 0.15283456747451746
+   -Model 2: Random Forest: 0.14696988698255328
+3. **Wynik na platformie Kaggle**: 0.16846
